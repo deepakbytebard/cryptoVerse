@@ -14,13 +14,15 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar
-          src="https://lh3.googleusercontent.com/bGheJIL5TetmTzaYS395-aSMJyNQIUynA8ZBs6pV_Sn9BdkIsd8vSLEHYNN7etK6skSdpa6v9lQuzyphu4N04fuR0vHe1M8N4fHUfrXoug"
-          size="large"
-        />
-        <Typography.Title level={2} className="logo">
-          <Link to="/">Cryptoverse</Link>
-        </Typography.Title>
+        <div className="main-logo">
+          <Avatar
+            src="https://lh3.googleusercontent.com/bGheJIL5TetmTzaYS395-aSMJyNQIUynA8ZBs6pV_Sn9BdkIsd8vSLEHYNN7etK6skSdpa6v9lQuzyphu4N04fuR0vHe1M8N4fHUfrXoug"
+            size="large"
+          />
+          <Typography.Title level={2} className="logo">
+            <Link to="/">Cryptoverse</Link>
+          </Typography.Title>
+        </div>
         <Menu theme="dark">
           <Menu.Item icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
