@@ -131,6 +131,7 @@ a:hover {
   }
   .home-title {
     font-size: 1.4rem !important;
+    color: black;
   }
   .show-more {
     font-size: 1.3rem !important;
@@ -285,6 +286,7 @@ a:hover {
     margin: 0;
   }
 }
+
 @media screen and (max-width: 500px) {
   .heading {
     margin-top: 20px;
