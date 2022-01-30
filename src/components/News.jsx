@@ -4,6 +4,7 @@ import moment from "moment";
 
 import { useGetCryptosQuery } from "../Services/cryptoApi";
 import { useGetCryptoNewsQuery } from "../Services/cryptoNewsApi";
+import Loader from "./Loader";
 
 const demoImage =
   "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
@@ -19,12 +20,12 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 12,
   });
 
-  if (!cryptoNews?.value) return "Loader..";
+  if (!cryptoNews?.value) return <Loader />;
 
   return (
     <Row gutter={[24, 24]}>
       {!simplified && (
-        <Col span={24}>
+        <Col className="news-sear" span={24}>
           <Select
             showSearch
             className="select-news"
